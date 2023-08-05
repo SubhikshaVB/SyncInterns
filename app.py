@@ -3,7 +3,9 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # Sample users dictionary for login and signup demonstration (you should use a proper database in a real application)
-users = {}
+users = {
+    username="subhi":password="123";
+}
 
 @app.route('/', methods=['GET', 'POST'])
 def login_signup():
